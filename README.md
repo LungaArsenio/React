@@ -1,2 +1,2 @@
-# React
-Projects built with this incredible Library
+# React Projects
+
