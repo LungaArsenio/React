@@ -22,4 +22,7 @@ export default instance;
  * The reason why are created instances is to set custom defaults
  * for your application.
  *
+ * axios.get(somelink/letsgoo) using this in other component
+ * will append to this instance that we created
+ *
  */
