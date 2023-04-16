@@ -1,4 +1,35 @@
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.nav {
+  height: 64px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font-family: Poppins, sans-serif;
+}
+
 .nav__logo {
-  width: 40px;
-  height: 62px;
+  width: 100px;
+  height: 64px;
+  object-fit: contain;
+}
+
+.nav__links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav__sign-in {
+  font-family: Poppins, sans-serif;
+  display: flex;
+  gap: 20px;
 }
