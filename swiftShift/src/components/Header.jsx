@@ -10,9 +10,10 @@ function Header({ title, description }) {
         <button className="header__btn--left">Join us now</button>
         <button className="header__btn--right">Request demo</button>
       </div>
-      {/* <div className="header__imgContainer"> */}
-      <img className="header__img" src="./src/assets/teampicture.jpg" alt="" />
-      {/* </div> */}
+
+      <figure className="header-img__container">
+        <img className="header__img" src="./src/assets/teampicture.jpg" />
+      </figure>
     </div>
   );
 }
