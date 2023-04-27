@@ -12,6 +12,7 @@
 }
 
 .card__description--title {
+  width: 300px;
   font-family: Poppins, sans-serif;
   font-size: 40px;
   line-height: 56px;
