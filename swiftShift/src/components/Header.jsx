@@ -11,7 +11,7 @@ function Header({ title, description }) {
         <button className="header__btn--right">Request demo</button>
       </div>
 
-      <figure className="header-img__container">
+      <figure className="header__img-container">
         <img className="header__img" src="./src/assets/teampicture.jpg" />
       </figure>
     </div>
