@@ -105,6 +105,5 @@
 
 .header__img {
   border-radius: 12px;
-  object-fit: cover;
   filter: contrast(130%);
 }
