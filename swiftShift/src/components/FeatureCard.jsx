@@ -3,7 +3,7 @@ import "../components/FeatureCard.css";
 
 function FeatureCard({ title, description, reverse }) {
   return (
-    <div className="card">
+    <div className={!reverse ? `card` : `card reverse`}>
       <div className="card__description">
         <h2 className="card__description--title"> {title}</h2>
         <p className="card__description--sub-title">{description}</p>
