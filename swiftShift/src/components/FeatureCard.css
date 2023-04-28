@@ -7,6 +7,11 @@
   gap: 8px;
 }
 
+.reverse {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
 .card__description {
   width: 480px;
 }

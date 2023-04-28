@@ -1,7 +1,7 @@
 import React from "react";
 import "../components/FeatureCard.css";
 
-function FeatureCard({ title, description }) {
+function FeatureCard({ title, description, reverse }) {
   return (
     <div className="card">
       <div className="card__description">
