@@ -108,3 +108,7 @@
   border-radius: 12px;
   filter: contrast(130%);
 }
+
+.hide {
+  display: none;
+}
