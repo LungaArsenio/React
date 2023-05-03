@@ -5,11 +5,14 @@ import Blog from "../pages/Blog";
 import About from "../pages/About";
 import { Link } from "react-router-dom";
 import "./Nav.css";
+import Home from "../pages/Home";
 
 function Nav() {
   return (
     <div className="nav">
-      <img className="nav__logo" src="./src/assets/logo.svg" alt="" />
+      <Link to="/" element={<Home />}>
+        <img className="nav__logo" src="./src/assets/logo.svg" alt="" />
+      </Link>
       <div className="nav__links">
         <Link to="/features" element={<Features />}>
           Features
