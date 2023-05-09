@@ -1,7 +1,8 @@
 import React from "react";
+import Nav from "../components/Nav";
 
 function About() {
-  return <h1>About us</h1>;
+  return <Nav />;
 }
 
 export default About;
