@@ -1,7 +1,8 @@
 import React from "react";
+import Nav from "../components/Nav";
 
 function Contact() {
-  return <h1>Contact</h1>;
+  return <Nav />;
 }
 
 export default Contact;
