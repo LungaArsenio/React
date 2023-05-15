@@ -1,6 +1,7 @@
 .pricing {
   margin: 120px 0;
   display: flex;
+  align-items: center;
   flex-direction: column;
   gap: 24px;
 }
@@ -9,17 +10,43 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 60px;
+  gap: 30px;
 }
 
 .pricing__description__title {
   font-size: 48px;
   font-family: Montserrat;
   font-weight: 600;
+  color: #171a1fff;
 }
 
-.pricing__Description__sub-title {
+.pricing__description__sub-title {
   font-size: 18px;
+  color: #323842ff;
+}
+
+.pricing__toggle {
+  background: #6355d8ff;
+  padding: 4px;
+  border-radius: 6px;
+}
+
+.pricing__toggle--btn {
+  border: transparent;
+  border-radius: 6px;
+  width: 115px;
+  height: 45px;
+  font-size: 16px;
+  color: #fff;
+  background: #6355d8ff;
+  opacity: 1;
+  transition: all 600ms;
+}
+
+.pricing__toggle--btn.active {
+  color: #6355d8ff;
+  background: #fff;
+  transition: all 600ms;
 }
 
 .pricing__cards {
