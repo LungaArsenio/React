@@ -110,3 +110,18 @@ li {
 .pricingCard__btn:disabled {
   opacity: 0.4;
 }
+
+/* STARTUP */
+
+.pricingCard.startup {
+  scale: 1.06;
+}
+
+.startup {
+  color: #6355d8ff;
+}
+
+.pricingCard__btn.startup {
+  background: #6355d8ff;
+  color: #171a1f;
+}

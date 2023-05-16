@@ -5,9 +5,19 @@ import { faCircleCheck } from "@fortawesome/free-solid-svg-icons";
 
 function PricingCard({ title, description, price, time }) {
   return (
-    <div className="pricingCard">
+    <div
+      className={title === "Startup" ? "pricingCard startup" : "pricingCard"}
+    >
       <div className="pricingCard__header">
-        <h3 className="pricingCard__header--title">{title}</h3>
+        <h3
+          className={
+            title === "Startup"
+              ? "pricingCard__header--title startup"
+              : "pricingCard__header--title"
+          }
+        >
+          {title}
+        </h3>
         <p className="pricingCard__header--description"> {description} </p>
         <div className="pricingCard__header__pricing">
           <p className="pricingCard__header__pricing--price"> {price} </p>
@@ -34,7 +44,13 @@ function PricingCard({ title, description, price, time }) {
           </li>
         </ul>
       </div>
-      <button className="pricingCard__btn">Upgrade</button>
+      <button
+        className={
+          title === "Startup" ? "pricingCard__btn startup" : "pricingCard__btn"
+        }
+      >
+        Upgrade
+      </button>
     </div>
   );
 }
