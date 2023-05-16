@@ -1,7 +1,8 @@
 import React from "react";
 import "../components/PricingCard.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faCircleCheck } from "@fortawesome/free-solid-svg-icons";
+
 function PricingCard({ title, description, price, time }) {
   return (
     <div className="pricingCard">
@@ -14,8 +15,26 @@ function PricingCard({ title, description, price, time }) {
         </div>
       </div>
       <div className="pricingCard__features">
-        <FontAwesomeIcon icon={faEnvelope} />
+        <ul className="pricingCard__features__list">
+          <li className="pricingCard__features__listItem">
+            <FontAwesomeIcon icon={faCircleCheck} className="circleCheck" />
+            <span>This feature is only available here</span>
+          </li>
+          <li className="pricingCard__features__listItem">
+            <FontAwesomeIcon icon={faCircleCheck} className="circleCheck" />
+            <span>This feature is only available here</span>
+          </li>
+          <li className="pricingCard__features__listItem">
+            <FontAwesomeIcon icon={faCircleCheck} className="circleCheck" />
+            <span>This feature is only available here</span>
+          </li>
+          <li className="pricingCard__features__listItem">
+            <FontAwesomeIcon icon={faCircleCheck} className="circleCheck" />
+            <span>This feature is only available here</span>
+          </li>
+        </ul>
       </div>
+      <button className="pricingCard__btn">Upgrade</button>
     </div>
   );
 }

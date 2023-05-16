@@ -1,3 +1,7 @@
+li {
+  list-style-type: none;
+}
+
 .pricingCard {
   width: 408px;
   height: 426px;
@@ -5,10 +9,22 @@
   border: 1px solid #fff;
   border-radius: 12px;
   box-shadow: 0 4px 9px #171a1f, 0 0 2px #171a1f;
+  padding: 28px 24px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 8px;
 }
 
+/* HEADER */
+
 .pricingCard__header {
-  padding: 28px 24px;
+  height: calc(100% / 3);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 8px;
 }
 
 .pricingCard__header--title {
@@ -19,6 +35,78 @@
   font-size: 16px;
 }
 
-.pricingCard__header--price {
+.pricingCard__header__pricing {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.pricingCard__header__pricing--price {
   font-size: 40px;
+  font-family: Montserrat;
+  color: #171a1fff;
+}
+
+.pricingCard__header__pricing--time {
+  color: #9095a0ff;
+}
+
+/* FEATURES */
+
+.pricingCard__features {
+  height: calc(100% / 3);
+}
+
+.pricingCard__features__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.pricingCard__features__listItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.circleCheck {
+  width: 24px;
+  height: 24px;
+  color: #1dd75bff;
+}
+
+/* BUTTON */
+
+.pricingCard__btn {
+  width: 100%;
+  height: 44px;
+  padding: 0 16px;
+  font-size: 18px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: #fff;
+  color: #6355d8ff;
+
+  border: 1px solid #6355d8ff;
+  border-radius: 6px;
+
+  opacity: 1;
+}
+
+.pricingCard__btn:hover {
+  color: #4de3d3ff;
+  background: #fff;
+}
+
+.pricingCard__btn:active {
+  color: #3d2dc7ff;
+  background: #fff;
+}
+
+.pricingCard__btn:disabled {
+  opacity: 0.4;
 }
