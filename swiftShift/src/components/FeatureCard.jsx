@@ -1,7 +1,7 @@
 import React from "react";
 import "../components/FeatureCard.css";
 
-function FeatureCard({ title, description, reverse }) {
+function FeatureCard({ title, description, image, reverse }) {
   return (
     <div className={!reverse ? `card` : `card reverse`}>
       <div className="card__description">
@@ -13,11 +13,7 @@ function FeatureCard({ title, description, reverse }) {
         </div>
       </div>
       <figure className="card__img-container">
-        <img
-          className="card__img"
-          src="\src\assets\twogirlsworking.jpg"
-          alt=""
-        />
+        <img className="card__img" src={image} />
       </figure>
     </div>
   );
