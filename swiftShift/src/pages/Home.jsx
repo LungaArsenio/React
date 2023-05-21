@@ -5,6 +5,7 @@ import Header from "../components/Header";
 import Trusted from "../components/Trusted";
 import FeatureCard from "../components/FeatureCard";
 import Pricing from "../components/Pricing";
+import SignCard from "../components/SignCard";
 
 function Home() {
   const reverse = true;
@@ -33,6 +34,7 @@ function Home() {
             image="./src/assets/menandwomenworking.jpg"
           />
           <Pricing />
+          <SignCard image="src/assets/guyexplainingproject.jpg" />
         </div>
       </div>
     </>

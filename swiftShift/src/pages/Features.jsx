@@ -2,6 +2,7 @@ import React from "react";
 import Nav from "../components/Nav";
 import Header from "../components/Header";
 import FeatureCard from "../components/FeatureCard";
+import SignCard from "../components/SignCard";
 
 function Features() {
   const hideButtons = true;
@@ -42,6 +43,8 @@ function Features() {
              with any questions or issues they may have."
             image="./src/assets/workinginboard.jpeg"
           />
+
+          <SignCard image="src/assets/guyexplainingproject.jpg" />
         </div>
       </div>
     </>
