@@ -1,7 +1,7 @@
 import React from "react";
 import "../components/PricingCard.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCircleCheck } from "@fortawesome/free-solid-svg-icons";
+import { faCircleCheck, faXmark } from "@fortawesome/free-solid-svg-icons";
 
 function PricingCard({ title, description, price, time }) {
   return (
@@ -28,19 +28,27 @@ function PricingCard({ title, description, price, time }) {
         <ul className="pricingCard__features__list">
           <li className="pricingCard__features__listItem">
             <FontAwesomeIcon icon={faCircleCheck} className="circleCheck" />
-            <span>This feature is only available here</span>
+            <span>Basic scheduling and time tracking features</span>
           </li>
           <li className="pricingCard__features__listItem">
             <FontAwesomeIcon icon={faCircleCheck} className="circleCheck" />
-            <span>This feature is only available here</span>
+            <span>Mobile app access</span>
           </li>
           <li className="pricingCard__features__listItem">
-            <FontAwesomeIcon icon={faCircleCheck} className="circleCheck" />
-            <span>This feature is only available here</span>
+            {title === "Personal" ? (
+              <FontAwesomeIcon icon={faXmark} className="xMark" />
+            ) : (
+              <FontAwesomeIcon icon={faCircleCheck} className="circleCheck" />
+            )}
+            <span>API access for integration with other tools</span>
           </li>
           <li className="pricingCard__features__listItem">
-            <FontAwesomeIcon icon={faCircleCheck} className="circleCheck" />
-            <span>This feature is only available here</span>
+            {title === "Personal" ? (
+              <FontAwesomeIcon icon={faXmark} className="xMark" />
+            ) : (
+              <FontAwesomeIcon icon={faCircleCheck} className="circleCheck" />
+            )}
+            <span>Dedicated account manager and phone support</span>
           </li>
         </ul>
       </div>

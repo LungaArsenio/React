@@ -4,7 +4,7 @@ li {
 
 .pricingCard {
   width: 408px;
-  height: 426px;
+  height: 550px;
   background: #fff;
   border: 1px solid #fff;
   border-radius: 12px;
@@ -76,6 +76,11 @@ li {
   color: #1dd75bff;
 }
 
+.xMark {
+  width: 24px;
+  height: 24px;
+}
+
 /* BUTTON */
 
 .pricingCard__btn {
@@ -114,10 +119,10 @@ li {
 /* STARTUP */
 
 .pricingCard.startup {
-  scale: 1.06;
+  scale: 1.05;
 }
 
-.startup {
+.pricingCard__header--title.startup {
   color: #6355d8ff;
 }
 
