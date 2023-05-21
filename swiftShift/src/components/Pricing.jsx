@@ -16,7 +16,7 @@ function Pricing() {
       <div className="pricing__description">
         <p className="pricing__description__title">Pricing</p>
         <p className="pricing__description__sub-title">
-          Officia ecercitation quis voluptate elit consequat nostruad
+          SwiftShift's differents pricing plans
         </p>
       </div>
       <div className="pricing__toggle">
@@ -24,6 +24,7 @@ function Pricing() {
           onClick={() => {
             handleClick(1);
           }}
+          kk
           className={
             activePlan === 1
               ? "pricing__toggle--btn active"
@@ -50,22 +51,22 @@ function Pricing() {
         <div className="pricing__cards">
           <PricingCard
             title="Personal"
-            description="Ipsum deserunt nisi tempor labor"
+            description="Ideal for individuals or small teams"
             price="$50"
-            time={undefined}
+            time={"/user/month"}
           />
           <PricingCard
             title="Startup"
-            description="Ipsum deserunt nisi tempor labor"
+            description="Ideal for growing businesses"
             price="$100"
             main={true}
-            time={undefined}
+            time={"/user/month"}
           />
           <PricingCard
             title="Organization"
-            description="Ipsum deserunt nisi tempor labor"
+            description="Ideal for larger businesses"
             price="$150"
-            time={undefined}
+            time={"/user/month"}
           />
         </div>
       )}
@@ -74,22 +75,22 @@ function Pricing() {
         <div className="pricing__cards">
           <PricingCard
             title="Personal"
-            description="Ipsum deserunt nisi tempor labor"
+            description="Ideal for individuals or small teams"
             price={"$600"}
-            time={undefined}
+            time={"/user/year"}
           />
           <PricingCard
             title="Startup"
-            description="Ipsum deserunt nisi tempor labor"
+            description="Ideal for growing businesses"
             price="$1200"
             main={true}
-            time={undefined}
+            time={"/user/year"}
           />
           <PricingCard
             title="Organization"
-            description="Ipsum deserunt nisi tempor labor"
+            description="Ideal for larger businesses"
             price="$1800"
-            time={undefined}
+            time={"/user/year"}
           />
         </div>
       )}
