@@ -3,36 +3,41 @@
   width: 1176px;
   height: 384px;
   border: 1px solid #f3f4f6;
+  border-radius: 12px;
 
   display: flex;
-  align-content: center;
 }
 
 .signCard__description {
-  background: #21196cff;
-  display: flex;
+  background: #21196c;
   border-radius: 12px 0 0 12px;
-  flex-direction: column;
   width: 50%;
-  padding: 36px 22px;
-  gap: 22px;
+  padding: 76px 64px;
 }
 
 .signCard__description--title {
-  font-size: 56px;
+  font-size: 48px;
+  line-height: 68px;
+  color: #6e7787;
 }
 
 .signCard__description--sub-title {
-  font-size: 22px;
+  font-size: 18px;
+  line-height: 28px;
+  color: #6e7787;
 }
 
 .signCard__btn {
   width: 112px;
   height: 52px;
-  padding: 0 12px;
+  padding: 0 20px;
+  margin-top: 24px;
   border: transparent;
   border-radius: 6px;
   font-size: 18px;
+  line-height: 28px;
+  color: #171a1f;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -40,7 +45,6 @@
 
 .signCard__container {
   width: 50%;
-  border-radius: 0 12px 12px 0;
 }
 
 .signCard__image {
