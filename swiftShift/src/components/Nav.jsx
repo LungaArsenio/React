@@ -6,6 +6,7 @@ import About from "../pages/About";
 import { Link } from "react-router-dom";
 import "./Nav.css";
 import Home from "../pages/Home";
+import Trusted from "./Trusted.jsx";
 
 function Nav() {
   return (
@@ -17,7 +18,7 @@ function Nav() {
         <Link to="/features" element={<Features />}>
           Features
         </Link>
-        <Link to="/features" element={<Features />}>
+        <Link to="/trusted" element={<Trusted />}>
           Pricing
         </Link>
         <Link to="/about" element={<About />}>
