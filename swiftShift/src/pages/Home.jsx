@@ -35,6 +35,7 @@ function Home() {
           />
           <Pricing />
           <SignCard image="src/assets/guyexplainingproject.jpg" />
+          <div className="blogs"></div>
         </div>
       </div>
     </>
