@@ -1,0 +1,97 @@
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 996px;
+  height: 618px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  border-radius: 12px;
+  z-index: 2;
+  overflow: hidden;
+
+  display: flex;
+}
+
+.modal--left {
+  width: 55%;
+  background: #fff;
+  padding: 80px 96px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.modal--left__title {
+  font-size: 32px;
+  text-align: center;
+}
+
+.modal--left__form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.form__item {
+  background: #f3f2fc;
+  padding: 0 12px;
+  border-radius: 6px;
+}
+
+.form__item input {
+  width: 100%;
+  height: 30px;
+
+  outline: transparent;
+  border-width: 0;
+  font-size: 14px;
+  background: #f3f2fc;
+}
+
+.form__item.password {
+  display: flex;
+}
+
+.form__item label {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.form__btn {
+  width: 100%;
+  height: 44px;
+  padding: 0 16px;
+  background: #6355d8;
+  color: #fff;
+  border-radius: 6px;
+  border: transparent;
+  font-size: 16px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal .modal--right {
+  width: 100%;
+  max-width: 45%;
+  padding: 100px 0;
+  background: #6355d8;
+}
+
+.close {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.eyes {
+  border: none;
+  background: inherit;
+}
+
+.eye {
+  width: 18px;
+  height: 18px;
+}
