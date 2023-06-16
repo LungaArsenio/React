@@ -28,11 +28,15 @@ function PricingCard({ title, description, price, time }) {
         <ul className="pricingCard__features__list">
           <li className="pricingCard__features__listItem">
             <FontAwesomeIcon icon={faCircleCheck} className="circleCheck" />
-            <span>Basic scheduling and time tracking features</span>
+            <span className="pricingCard__features__listItem__text">
+              Mobile app access
+            </span>
           </li>
           <li className="pricingCard__features__listItem">
             <FontAwesomeIcon icon={faCircleCheck} className="circleCheck" />
-            <span>Mobile app access</span>
+            <span className="pricingCard__features__listItem__text">
+              Scheduling and time tracking{" "}
+            </span>
           </li>
           <li className="pricingCard__features__listItem">
             {title === "Personal" ? (
@@ -40,7 +44,9 @@ function PricingCard({ title, description, price, time }) {
             ) : (
               <FontAwesomeIcon icon={faCircleCheck} className="circleCheck" />
             )}
-            <span>API access for integration with other tools</span>
+            <span className="pricingCard__features__listItem__text">
+              API for integration with other tools
+            </span>
           </li>
           <li className="pricingCard__features__listItem">
             {title === "Personal" ? (
@@ -48,7 +54,9 @@ function PricingCard({ title, description, price, time }) {
             ) : (
               <FontAwesomeIcon icon={faCircleCheck} className="circleCheck" />
             )}
-            <span>Dedicated account manager and phone support</span>
+            <span className="pricingCard__features__listItem__text">
+              Account manager and phone support
+            </span>
           </li>
         </ul>
       </div>
@@ -57,7 +65,7 @@ function PricingCard({ title, description, price, time }) {
           title === "Startup" ? "pricingCard__btn startup" : "pricingCard__btn"
         }
       >
-        Upgrade
+        {title === "Organization" ? "Contact sale" : "Upgrade"}
       </button>
     </div>
   );

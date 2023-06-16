@@ -3,8 +3,8 @@ li {
 }
 
 .pricingCard {
-  width: 408px;
-  height: 550px;
+  width: 382px;
+  height: 466px;
   background: #fff;
   border: 1px solid #fff;
   border-radius: 12px;
@@ -20,7 +20,6 @@ li {
 /* HEADER */
 
 .pricingCard__header {
-  height: calc(100% / 3);
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -28,7 +27,7 @@ li {
 }
 
 .pricingCard__header--title {
-  font-size: 40px;
+  font-size: 48px;
 }
 
 .pricingCard__header--description {
@@ -43,6 +42,7 @@ li {
 
 .pricingCard__header__pricing--price {
   font-size: 40px;
+  font-weight: 700;
   font-family: Montserrat;
   color: #171a1fff;
 }
@@ -68,6 +68,10 @@ li {
   display: flex;
   align-items: center;
   gap: 10px;
+}
+
+.pricingCard__features__listItem__text {
+  font-size: 15px;
 }
 
 .circleCheck {
@@ -119,7 +123,7 @@ li {
 /* STARTUP */
 
 .pricingCard.startup {
-  scale: 1.05;
+  scale: 1.04;
 }
 
 .pricingCard__header--title.startup {
@@ -128,5 +132,5 @@ li {
 
 .pricingCard__btn.startup {
   background: #6355d8ff;
-  color: #171a1f;
+  color: #fff;
 }
