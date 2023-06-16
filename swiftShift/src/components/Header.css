@@ -1,5 +1,5 @@
 .header {
-  /* margin: 0 auto; */
+  width: 1176px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -7,7 +7,7 @@
 }
 
 .header__title {
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   font-size: 56px;
   color: #6355d8ff;
   font-weight: 600;
@@ -97,11 +97,9 @@
 }
 
 .header__img-container {
-  max-width: 1200px;
-  width: 100%;
+  width: 1176px;
   height: 600px;
   margin-bottom: 60px;
-  padding: 0 12px;
 }
 
 .header__img {
