@@ -45,7 +45,7 @@
   font-size: 18px;
   font-family: Poppins;
   font-weight: 600;
-  transition: all 600ms ease-in;
+  transition: all 300ms ease-in;
 }
 
 .header__btn--left:hover {
@@ -79,7 +79,7 @@
   font-size: 18px;
   font-family: Poppins;
   font-weight: 600;
-  transition: all 600ms ease-in;
+  transition: all 300ms ease-in;
 }
 
 .header__btn--right:hover {

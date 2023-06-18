@@ -87,7 +87,7 @@
   border: transparent;
   border-radius: 6px;
   opacity: 1;
-  transition: all 600ms ease;
+  transition: all 300ms ease;
 }
 
 .card__btn--secondary:hover {
