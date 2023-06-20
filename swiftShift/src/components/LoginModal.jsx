@@ -9,20 +9,20 @@ const LoginModal = ({ sign }) => {
   const [password, setPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
 
-  const handleChange = (event) => {
-    setPassword(event.target.value);
-  };
-
-  const togglePasswordVisibility = () => {
-    setShowPassword(!showPassword);
-  };
-
   const handleSignIn = () => {
     setShowModal(true);
   };
 
   const handleCloseModal = () => {
     setShowModal(false);
+  };
+
+  const handleChange = (event) => {
+    setPassword(event.target.value);
+  };
+
+  const togglePasswordVisibility = () => {
+    setShowPassword(!showPassword);
   };
 
   return (
@@ -33,9 +33,6 @@ const LoginModal = ({ sign }) => {
       {showModal && (
         <div className="modal">
           <div className="modal--left">
-            {/* <span className="close" onClick={handleCloseModal}>
-              <FontAwesomeIcon icon={faXmark} className="xMark" />
-            </span> */}
             <h2 className="modal--left__title">Create an account</h2>
             <form className="modal--left__form">
               <div className="form__item">
@@ -64,7 +61,7 @@ const LoginModal = ({ sign }) => {
                     type={showPassword ? "text" : "password"}
                     value={password}
                     onChange={handleChange}
-                    // id="password"
+                    id="password"
                   />
                 </label>
                 <button
