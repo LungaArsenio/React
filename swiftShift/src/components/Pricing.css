@@ -21,7 +21,7 @@
 }
 
 .pricing__description__sub-title {
-  font-size: 22px;
+  font-size: 18px;
   color: #323842ff;
 }
 
@@ -51,6 +51,7 @@
 
 .pricing__cards {
   display: flex;
-  gap: 6px;
+  justify-content: center;
+  gap: 12px;
   flex-wrap: wrap;
 }
