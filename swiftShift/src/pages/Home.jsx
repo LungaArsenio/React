@@ -6,6 +6,7 @@ import Trusted from "../components/Trusted";
 import FeatureCard from "../components/FeatureCard";
 import Pricing from "../components/Pricing";
 import SignCard from "../components/SignCard";
+import Blogs from "../components/Blogs";
 
 function Home() {
   const reverse = true;
@@ -35,7 +36,14 @@ function Home() {
           />
           <Pricing />
           <SignCard image="src/assets/guyexplainingproject.jpg" />
-          <div className="blogs"></div>
+          <div className="wtnew">
+            <h3 className="wtnew__title">What's new?</h3>
+            <p className="wtnew__sub-title">
+              Do consectetur proident proident id eiusmod deserunt consequat
+              pariatur ad ex velit do Lorem reprehenderit.
+            </p>
+            <Blogs numCards={3} />
+          </div>
         </div>
       </div>
     </>
